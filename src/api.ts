@@ -1,4 +1,4 @@
-import { Dispensery as Dispensary, Dispensery } from "./dispensary";
+import { Dispensary } from "./dispensary";
 import { Carrier } from "./carrier";
 import { Bank } from "./bank";
 
@@ -11,7 +11,7 @@ let carriers: Carrier[] = [];
         return dispensary;
     }
 
-    export function getAllDispensaries(): Dispensery[] {
+    export function getAllDispensaries(): Dispensary[] {
         return dispensaries;
     }
 

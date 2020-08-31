@@ -2,7 +2,7 @@ import { Carrier } from "./carrier";
 import { Bank } from "./bank";
 import { getDefaultCarrier, getCarrier, updateDispensary } from "./api";
 
-export class Dispensery {
+export class Dispensary {
     id: number;
     name: string;
     carrier?: Carrier;
