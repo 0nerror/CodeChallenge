@@ -4,7 +4,7 @@ import * as api from "./api";
 const bank = new Bank();
 
 test('create a new instance of bank', () => {
-    expect(new Bank ().name).toBe('The Bank');
+    expect(new Bank().name).toBe('The Bank');
 });
 
 test('create a new dispensary', () => {
