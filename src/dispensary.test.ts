@@ -1,8 +1,9 @@
 import * as api from "./api";
 import { Bank } from "./bank";
 
+const bank = new Bank();
+
 test('use dispensary to set carrier as prefered', () => {
-    const bank = new Bank();
     bank.addDispensary('newDispensary');
     bank.addCarrier('newCarrier');
     let dispensary = api.getDispensary(1);
@@ -11,7 +12,6 @@ test('use dispensary to set carrier as prefered', () => {
 });
 
 test('set dispensary carrier to bank prefered and then try to re-set it with dispensary', () => {
-    const bank = new Bank();
     bank.addCarrier('bankPrefered');
     bank.addCarrier('dispensaryPrefered');
     bank.setPreferedCarrier(1,2);
