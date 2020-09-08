@@ -12,7 +12,7 @@ test('create a new dispensary', () => {
     expect(api.getDispensary(1).name).toBe('newDisp');
 });
 
-test('creaate a new carrier', () => {
+test('create a new carrier', () => {
     bank.addCarrier('newCarrier');
     expect(api.getCarrier(1).name).toBe('newCarrier');
 });
